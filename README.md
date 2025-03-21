@@ -1,60 +1,67 @@
-# Full-Stack Development Internship - Level_1 @codveda 
+# Full-Stack Development Internship - Level_1 @Codveda
 
-Welcome to Level 1 of the **Codveda Technology Full-Stack Development Internship**. This document outlines the tasks, setup instructions, and objectives for first level.
-
----
-
-## Prerequisites
-Ensure you have the following installed on your system:
-- **Node.js** and **npm/yarn**
-- **Git** (with a GitHub account)
-- **VS Code** (or any preferred code editor)
-- **Postman/Thunder Client** (for API testing)
-- **MongoDB/MySQL/PostgreSQL** (any one database)
+Welcome to Level 1 of the **Codveda Technology Full-Stack Development Internship**. This document outlines the tasks, setup instructions, and objectives for the first level.
 
 ---
 
-## Task 1: Setup Development Environment
-### Steps:
-1. Install and configure **Node.js** and **npm/yarn**.
-2. Set up a **GitHub repository** and initialize a project.
-3. Install a database (**MongoDB/MySQL/PostgreSQL**) and configure it.
-4. Learn and practice basic terminal commands.
+## How to Set Up and Run the Project
 
-### Objectives:
-- Setup a working development environment.
-- Learn Git version control basics.
-- Understand database installation and connection.
-- Gain confidence with terminal commands.
+### Create a Project Directory
+```sh
+mkdir my_project && cd my_project
+```
+---
+### Save the level_1.js file in this directory
+copy form this ripo (you need to copy just level_1 file )
+
+---
+### Install Dependencies
+```sh
+npm install express ejs sequelize sqlite3 method-override
+```
+---
+### Run the Application
+```sh
+node level_1.js
+```
+---
+## Access the Website
+```sh
+http://localhost:3000
+```
+---
+
+This application is entirely contained in a single file (`level_1.js`) that:
+
+1. Sets up the Express application
+2. Creates necessary directories and files
+3. Defines the database model
+4. Sets up all routes
+5. Configures error handling
+6. Starts the server
+
+When you run the application, it automatically creates a SQLite database file in the project directory.
 
 ---
 
-## Task 2: Build a Simple REST API
-### Steps:
-1. Initialize an **Express.js** server.
-2. Create API routes for basic **CRUD** operations (e.g., Users, Products).
-3. Use **Postman/Thunder Client** to test API endpoints.
-4. Implement error handling and return appropriate HTTP responses.
+## How to Contribute
 
-### Objectives:
-- Learn how to set up an Express server.
-- Implement CRUD operations.
-- Understand REST API testing tools.
-- Handle errors effectively.
+1. Fork this repository
+2. Create a new branch for your feature
+3. Add your changes
+4. Submit a pull request
 
 ---
 
-## Task 3: Frontend with HTML, CSS, and JavaScript
-### Steps:
-1. Build a simple static webpage using **HTML, CSS, and JavaScript**.
-2. Fetch data from your REST API using **Fetch API or Axios**.
-3. Display fetched data dynamically on the webpage.
-4. Apply CSS for styling and responsiveness.
+## Deployment
 
-### Objectives:
-- Create a basic frontend interface.
-- Learn how to integrate frontend with a backend API.
-- Implement responsive design principles.
+To deploy this application to production:
+
+1. Set `NODE_ENV=production`
+2. Consider using a process manager like **PM2**
+3. Use a reverse proxy like **Nginx** or **Apache**
 
 ---
-Thanks for Visiting! give a start to repo 
+
+Thanks for Visiting! ⭐ Give a star to the repo! 🚀
+
